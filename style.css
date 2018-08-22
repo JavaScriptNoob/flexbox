@@ -1,0 +1,56 @@
+body {
+    height: 2000px;
+    width: 100%;
+    margin: 0 ;padding:0; 
+    display: block;
+ }
+ footer, .white {
+     background: url(christmas-dark.png);height: 20%;
+ 
+ }
+ main,header {
+     background: url(christmas-colour.png);height: 30%;
+    }
+ .for-flex { 
+display: flex;
+align-items:center; flex-wrap: wrap; 
+justify-content: space-around;
+align-items: center; }
+h1 {
+    width: 100%;align-self: center;
+    text-align: center;
+    font-family: "Trebuchet MS", sans-serif;
+    font-size: 36px;
+    line-height: 1.5;
+    color:#160346;   
+    word-spacing: 2px;}
+a { margin-top: 20px;
+    text-decoration: none;
+    outline: none;
+    /* display: inline-block; */
+    /* align-self: flex-end; */
+    /* /* margin: 10px 20px; */
+    padding: 15px 30px; 
+    overflow: hidden;
+    border: 2px solid;
+    border-bottom-width: 4px;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: rgba(30,255,188,1);
+    background: rgba(255,255,255,1);
+    transition: color .3s, background .5s;
+  }
+  a:hover {
+    animation: stripes .75s infinite linear;
+    background: linear-gradient(45deg, rgba(30,255,188,1) 25%, rgba(255,255,255,1) 25%, rgba(255,255,255,1) 50%, rgba(30,255,188,1) 50%,      rgba(30,255,188,1) 75%, rgba(255,255,255,1) 75%, rgba(255,255,255,1));
+    background-size: 10px 10px;
+    color: #FF50E5;
+  }
+  @keyframes stripes {
+    0% {background-position: 0 0;}
+    100% {background-position: 50px 0;}
+  }
+  .foto {display:flex; justify-content: space-around;}
+  .vodka {order: -1;}
